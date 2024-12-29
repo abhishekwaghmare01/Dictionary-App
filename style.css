@@ -38,7 +38,7 @@ main form{
 form input[type="text"]{
     flex-grow:1;
 }
-form input[type = "text"], button[type="submit"]{
+form input[type = "text"], button[type="submit"], .result div a{
     border: none;
     font-size:16px;
     font-weight:500;
@@ -58,4 +58,31 @@ footer{
     font-size: 15px;
     position: fixed;
     width:100%;
+}
+.result{
+    background-color: #fff;
+    padding: var(--padding);
+    border-radius:var(--border-radius);
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.result p{
+    margin-top:10px;
+}
+.result p[class= "partOfSpeech"]{
+    font-style: italic;
+    color: #808080;
+    margin-top:2px;
+}
+.result div a{
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.result div{
+    margin-top: 20px;
+}
+.result li{
+    padding: 2px;
+    margin-left: 20px;
 }
